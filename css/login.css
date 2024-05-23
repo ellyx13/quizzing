@@ -1,3 +1,20 @@
 body {
     background-image: url("../asset/image/background.svg");
 }
+
+
+
+#inputEmail {
+    width: 500px;
+}
+
+#inputPassword {
+    width: 500px;
+}
+
+#container {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 550px;
+    height: 521px;
+}
