@@ -25,7 +25,7 @@
 }
 .navbar-toggler{
     --bs-navbar-toggler-transition: 0;
-    background-color: white;
+    background-color: white !important;
 }
 @media (max-width: 576px) {
     .col-3 {
@@ -63,8 +63,8 @@
     --bs-nav-pills-border-radius: var(--bs-border-radius);
     border-radius: var(--bs-nav-pills-border-radius);
 }
-.page-now-icon{
-    color: #7556ff;
+.page-now img {
+    filter: brightness(200%)
 }
 .col-l-p{
     display: flex;
