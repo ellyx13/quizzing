@@ -125,16 +125,30 @@
 .search-bar input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn{
+        width: 150px !important;
+    }
+    .btn-start{
+        width: 150px !important;
+    }
+    .card{
+        width: 250px !important;
+    }
+    .nav-card{
+        gap: 40px 50px !important;
+    }
     .text-light{
         margin-top: 10px;
     }
     .search-bar {
-        width: 100%;
+        width: 280px;
         margin-left: 15px;
-    }
-    .search-bar input {
-        width: calc(100% - 50px);
+        transition: width 5s;
     }
 }
 .card{
@@ -163,7 +177,7 @@
     flex-wrap: wrap;
 }
 .btn-start{
-    width: 200px !important;
+    width: 200px;
     height: 30px !important;
     border-radius: 5px !important;
     --bs-btn-padding-x: 10px !important;

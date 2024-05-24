@@ -140,25 +140,18 @@
 } */
 
 /* CSS chỉnh cho cái thanh scroll đẹp lại */
-/* width */
 .leaderboard-info::-webkit-scrollbar {
      width: 10px;
 }
-/* Track */
 .leaderboard-info::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
-/* Handle */
 .leaderboard-info::-webkit-scrollbar-thumb {
     background: #888; 
 }
-
-/* Handle on hover */
 .leaderboard-info::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-/* CSS chỉnh cho cái thanh scroll đẹp lại */
-
 .user-info{
     display: flex;
     margin: 0px 100px 0px 30px;
@@ -216,5 +209,17 @@
 }
 .user-btn button:hover{
     filter: brightness(130%);
+}
+@media (max-width: 1024px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn{
+        width: 150px !important;
+    }
+    .btn-start{
+        width: 150px !important;
+    }
 }
 /* CSS này là của Leaderboard */
