@@ -1,0 +1,54 @@
+.container-fluid{
+    width: 1920px !important;
+}
+.h-1{
+    display: flex;
+}
+.col{
+    width: 75% !important; 
+    background-color: #1A1A2F;
+}
+.col-3{
+    width: 25% !important;
+    height: 1080px;
+    background-color: #20203C;
+    padding: 15px 25px 0px 25px !important;
+}
+
+.nav-link{
+    --bs-nav-link-padding-y: 1rem;
+    --bs-nav-link-color:#8b8ba8;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    color: var(--bs-nav-link-color);
+    --bs-border-radius:15px;
+    --bs-btn-border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-btn-border-radius);
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-link:hover{
+    background-color: #33334d;
+    color: white !important;
+    --bs-border-radius:15px;
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-nav-pills-border-radius);
+}
+.col-l-p{
+    font-family: Barlow, Consolas, "Courier New", monospace;
+    font-size: 40px !important;
+    padding-left: 57px;
+    margin: 74.72px 0px 22.44px 58px;
+    font-weight: 700;
+    line-height: 44px !important;
+    color: #ffff;
+}
+.row-b{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+}
+.btn{
+    --bs-border-radius:15px;
+    --bs-btn-border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-btn-border-radius);
+    height: 70px;
+    width: 200px;
+}
