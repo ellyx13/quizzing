@@ -11,25 +11,29 @@
 </head>
 
 <body>
-  <div class="logo">
-    <img src="../asset/image/logo.svg" alt="Logo" />
-    <h1>Quizzing</h1>
-  </div>
-  <div class="wrapper">
-    <div id="container">
-      <form>
-        <h1 class="title">Welcome back</h1>
-        <input type="email" class="p-2 form-control" id="inputLogin" placeholder="Email"
-          aria-describedby="inputGroup-sizing-lg">
-        <input type="password" class="p-2 form-control" id="inputLogin" placeholder="Password">
-        <button type="submit" class="btn btn-primary" id="btnLogin">Login</button>
-        <a href="#" class="link-forgot">Forgot password?</a>
-        <p class="split">OR</p>
-        <button class="login-gg">Login with Google <img src="../asset/image/google.png" alt="" width="24px"></button>
+  <div class="container">
+    <div class="row row-cols-1">
+      <div class="col align-self-start logo">
+        <img src="../asset/image/logo.svg" alt="Logo" width="32px" />
+        <b>Quizzing</b>
+      </div>
 
-      </form>
+      <div class="col align-self-center justify-content-center card">
+        <h1 class="title">Welcome back!</h1>
+        <form class="d-grid gap-3">
+          <input type="email" class="form-control btnInput" placeholder="Email">
+          <input type="password" class="form-control btnInput" placeholder="Password">
+          <button type="submit" class="btnLogin">Login</button>
+          <a href="#" class="linkForgotPassword">Forgot password?</a>
+          <p class="split">OR</p>
+          <button class="loginGoogle">Login with Google <img src="../asset/image/google.png" alt=""
+              width="24px"></button>
+
+        </form>
+      </div>
     </div>
   </div>
+
 </body>
 
 </html>
