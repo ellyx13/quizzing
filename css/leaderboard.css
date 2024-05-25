@@ -154,7 +154,7 @@
 }
 .user-info{
     display: flex;
-    margin: 0px 100px 0px 30px;
+    margin: 0px 70px 0px 30px;
 }
 .user-info img{
     margin-right: 15px;
@@ -182,7 +182,7 @@
 }
 .user-percent{
     display: flex;
-    margin: 0px 150px 0px 50px;
+    margin: 0px 100px 0px 50px;
 }
 .user-percent img{
     margin-top: 5px ;

@@ -94,8 +94,9 @@
     color: #8B8BA8;
     border-radius: 5px;
     padding-left: 10px;
-    margin: 10px 5% 0px 0px;
-    width: 21%;
+    margin: 10px 5.9% 0px 0px;
+    width: 100%;
+    max-width: 300px;
     height: 40px;
 }
 .search-bar input {
@@ -127,10 +128,13 @@
 }
 
 
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .col-3{
         padding-left: 10px !important;
         padding-right: 0px !important;
+    }
+    .btn-create{
+        width: 150px !important;
     }
     .btn-start{
         width: 200px !important;
@@ -146,29 +150,62 @@
     }
     .search-bar {
         width: 280px;
-        margin-left: 15px;
+        margin-left: 20%;
         transition: width 5s;
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 970px) {
     .col-3{
         padding-left: 10px !important;
         padding-right: 0px !important;
+        width: 10% !important;
+    }
+    .col-9{
+        width: 90% !important;
+    }
+    .nav-card{
+        gap: 40px 50px !important;
+    }
+    .search-bar {
+        width: 300px;
+        margin-right: 10%;
+        transition: width 5s;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        width: 10% !important;
+    }
+    .col-9{
+        width: 90% !important;
+    }
+    .btn-start{
+        width: 200px !important;
+    }
+    .card{
+        width: 250px !important;
+    }
+    .nav-card{
+        gap: 40px 20px !important;
+    }
+}
+@media (max-width: 425px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        width: 20% !important;
+    }
+    .col-9{
+        width: 80% !important;
     }
     .btn-start{
         width: 200px !important;
     }
 }
-@media (max-width: 576px) {
-    .col-3{
-        padding-left: 10px !important;
-        padding-right: 0px !important;
-    }
-    .btn-start{
-        width: 200px !important;
-    }
-}
-@media (max-width: 376px) {
+@media (max-width: 375px) {
     .col-3{
         padding-left: 10px !important;
         padding-right: 0px !important;

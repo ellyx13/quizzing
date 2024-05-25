@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/quizzes.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Quizzes</title>
     <style>
         .name{
@@ -23,6 +24,10 @@
         }
         .btn-text{
             margin: 0px 0px 0px 10px;
+            text-decoration: none;
+            color: white;
+            font-family: barlow;
+            font-weight: 700;
         }
         li{
             margin: 10px 0px 10px 0px;
@@ -59,7 +64,7 @@
                                 <div class="row-b">
                                     <button class="btn btn-primary btn-create">
                                         <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
-                                        <b class="fs-3 btn-text">Create</b>
+                                        <a class="fs-3 disable btn-text">Create</a>
                                     </button>
                                 </div>
                                 <ul class="navbar-nav flex-column flex-grow-1 pe-3">
@@ -96,13 +101,13 @@
                     <p class="fs-1 text-light">Home</p>
                     <form class="search-bar" role="search">
                         <img src="asset/image/search.png" alt="search">
-                        <input class="form-control me-2" type="search" placeholder="Search quiz"></input>
+                        <input class="form-control me-2" type="search" placeholder="Search quiz" id="search-input"></input>
                     </form>
                 </div>
                 <!------------- -->
                 <!-- list các bài quiz -->
                 <div class="div-card">
-                    <div class="nav-card ">
+                    <div class="nav-card">
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -113,7 +118,7 @@
                                 </div>
                                 <div class="nav-btn">
                                     <a href="#" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                    <img id="myImage1" src="asset/image/heart.png" class="btn-heart" alt="">
                                 </div>
                             </div>
                         </div>
@@ -121,6 +126,34 @@
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">HTML căn bản</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img id="myImage2" src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kinh tế chính trị</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img id="myImage3" src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kinh tế chính trị</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
                                     &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
@@ -148,35 +181,7 @@
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
+                                <h5 class="card-title">Kinh tế chính trị</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
                                     &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
@@ -282,5 +287,42 @@
     </div>
     <!-- Toàn bộ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('search-input');
+            const cards = document.querySelectorAll('.card');
+            
+            searchInput.addEventListener('input', function () {
+                const searchTerm = searchInput.value.toLowerCase();
+                cards.forEach(card => {
+                    const title = card.querySelector('.card-title').textContent.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+
+
+            const event = new Event('input');
+            searchInput.dispatchEvent(event);
+
+
+            const heartImages = document.querySelectorAll('.btn-heart');
+            const firstImageSrc = 'asset/image/heart-solid.svg';
+            const secondImageSrc = 'asset/image/heart.png';
+
+            heartImages.forEach(imgElement => {
+                imgElement.addEventListener('click', function () {
+                    if (imgElement.src.includes(firstImageSrc)) {
+                        imgElement.src = secondImageSrc;
+                    } else {
+                        imgElement.src = firstImageSrc;
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
