@@ -131,6 +131,13 @@ form {
     border: none;
     background-color: #2F094A;
     opacity: 0.8;
+    text-align: center;
+}
+
+.login-gg button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
 }
 
 @media screen and (max-width: 640px) {
