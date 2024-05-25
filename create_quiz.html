@@ -36,46 +36,55 @@
         <div class="row">
             <!-- left -->
             <div class="col-3">
-                <div class="row" style="color: azure">
-                    <div class="h-1">
-                        <img src="asset/image/image1.png" class="rounded-circle" alt="avata user" width="48px" height="48px"/>
-                        <p class=" fs-4 name">Kiet Pham</p>
-                    </div>
-                </div>
-                <div class="row-b">
-                    <div class="">
-                        <button class="btn btn-primary btn-create">
-                            <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
-                            <b class="fs-3 btn-text">Create</b>
+                <nav class="navbar bg-body-tertiary navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <img src="asset/image/bars-solid.svg" width="20px" alt="">
                         </button>
+                        <div class="offcanvas offcanvas-start " style="background-color: #20203C;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header text-light">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Quizzes</h5>
+                                <button type="button" class="btn-close" style="font-size: 20px; color: white;" sty data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                            </div>
+                            <div class="offcanvas-body flex-column">
+                                <div class="h-1" style="color: azure">
+                                    <img src="asset/image/image1.png" class="rounded-circle" alt="avata user" width="48px" height="48px"/>
+                                    <p class=" fs-4 name">Kiet Pham</p>
+                                </div>
+                                <div class="row-b">
+                                    <button class="btn btn-primary btn-create">
+                                        <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
+                                        <b class="fs-3 btn-text">Create</b>
+                                    </button>
+                                </div>
+                                <ul class="navbar-nav flex-column flex-grow-1 pe-3">
+                                    <li class="nav-item li-menu">
+                                        <a class="nav-link disable  fs-5" aria-current="page" href="quizzes.html">
+                                            <img src="asset/image/home.png" alt="">
+                                            &emsp;Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item li-menu page-now">
+                                        <a class="nav-link disable text-light fs-5" href="leaderboard.html">
+                                            <img src="asset/image/question.png" alt="">
+                                            &emsp;Leaderboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item li-menu">
+                                        <a class="nav-link disable fs-5" href="">
+                                            <img src="asset/image/dashboard.png" alt="">
+                                            &emsp;Reports
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row col-bar">
-                    <ul class="nav flex-column nav-pills">
-                        <li class="nav-item mt page-now">
-                            <a class="nav-link disable text-light fs-5" aria-current="page">
-                                <img src="asset/image/home.png">
-                                &emsp;Home
-                            </a>
-                        </li>
-                        <li class="nav-item mt">
-                            <a class="nav-link disable fs-5">
-                                <img src="asset/image/question.png" >
-                                &emsp;Leaderboard
-                            </a>
-                        </li>
-                        <li class="nav-item mt">
-                            <a class="nav-link disable fs-5" >
-                                <img src="asset/image/dashboard.png" >
-                                &emsp;Reports
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </nav>
             </div>
             <!-- left -->
             <!-- right -->
-            <div class="col">
+            <div class="col-9">
                 <div class="col-l-p">
                     <p class="fs-1 text-light">Create quiz</p>
                 </div>
@@ -318,7 +327,7 @@
           </div>
           </div>
          
-    </div>
+            </div>
              <!-- right -->
         </div>
               <!-- 2 cột -->
