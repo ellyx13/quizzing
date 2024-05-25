@@ -125,19 +125,70 @@
 .search-bar input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
-@media (max-width: 768px) {
+
+
+@media (max-width: 1025px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 200px !important;
+    }
+    .card{
+        width: 250px !important;
+    }
+    .nav-card{
+        gap: 40px 50px !important;
+    }
     .text-light{
         margin-top: 10px;
     }
     .search-bar {
-        width: 100%;
+        width: 280px;
         margin-left: 15px;
+        transition: width 5s;
     }
-    .search-bar input {
-        width: calc(100% - 50px);
+}
+@media (max-width: 769px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 200px !important;
+    }
+}
+@media (max-width: 576px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 200px !important;
+    }
+}
+@media (max-width: 376px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 160px !important;
+    }
+}
+@media (max-width: 320px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 120px !important;
     }
 }
 .card{
+    height: auto;
+    width: 300px !important;
     --bs-border-width: none;
     --bs-border-radius: 11px;
 }
@@ -149,6 +200,7 @@
     padding: var(--bs-card-spacer-x) var(--bs-card-spacer-y) var(--bs-card-spacer-z) var(--bs-card-spacer-t) !important;
 }
 .card-title{
+    text-overflow: ellipsis;
     --bs-card-title-spacer-y: 7px;
     margin-bottom: var(--bs-card-title-spacer-y);
 }
@@ -163,7 +215,7 @@
     flex-wrap: wrap;
 }
 .btn-start{
-    width: 200px !important;
+    width: 200px;
     height: 30px !important;
     border-radius: 5px !important;
     --bs-btn-padding-x: 10px !important;

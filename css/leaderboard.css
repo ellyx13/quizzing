@@ -3,7 +3,7 @@
     --bs-gutter-x:none !important;
 }
 .h-1{
-    display: flex;
+    display: flex !important;
 }
 .col-3{
     width: 20% !important;
@@ -98,7 +98,7 @@
 .btn-text{
     margin: 0px 0px 0px 10px;
 }
-li{
+.li-menu{
     margin: 10px 0px 10px 0px;
 }
 .row-b{
@@ -107,3 +107,119 @@ li{
     height: 70px;
 }
 /* toàn bộ css của navbar menu */
+
+/* CSS này là của Leaderboard */
+.header{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.fs-3{
+    margin-bottom: 0;
+}
+.list-group{
+    --bs-body-bg: #1A1A2F;
+    --bs-body-color: white;
+}
+.list-group-item{
+    /* --bs-list-group-border-width:; */
+    --bs-list-group-border-color: #4F4F4F;
+    --bs-list-group-item-padding-y: none;
+    --bs-list-group-item-padding-x: none;
+    padding: 10px 10px 10px 0px !important;
+    margin-top: 20px;
+}
+.leaderboard-info{
+    overflow: auto;
+    white-space: nowrap;
+    outline-width: none;
+    flex-wrap: wrap;
+    max-height: 912px;
+}
+/* .leaderboard-info::-webkit-scrollbar {
+    display: none;
+} */
+
+/* CSS chỉnh cho cái thanh scroll đẹp lại */
+.leaderboard-info::-webkit-scrollbar {
+     width: 10px;
+}
+.leaderboard-info::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.leaderboard-info::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.leaderboard-info::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.user-info{
+    display: flex;
+    margin: 0px 100px 0px 30px;
+}
+.user-info img{
+    margin-right: 15px;
+}
+.user-quiz{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+}
+.user-quiz img{
+    margin-top: 5px ;
+    margin-right: 5px;
+    width: 28px;
+    height: 28px;
+    filter: brightness(200%); 
+}
+.user-scores{
+    display: flex;
+    margin: 0px 50px 0px 50px;
+}
+.user-scores img{
+    margin-top: 5px ;
+    margin-right: 5px;
+    width: 28px;
+    height: 28px;
+}
+.user-percent{
+    display: flex;
+    margin: 0px 150px 0px 50px;
+}
+.user-percent img{
+    margin-top: 5px ;
+    margin-right: 5px;
+    width: 28px;
+    height: 28px;
+}
+.user-btn{
+    display: flex;
+}
+.user-btn button{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF734B; /* Màu nền tùy chọn */
+    color: white; /* Màu chữ tùy chọn */
+    border: none; /* Loại bỏ viền */
+    border-radius: 10px; /* Tùy chỉnh độ bo góc */
+    font-size: 16px; /* Kích thước chữ tùy chọn */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    margin: 0px 0px 0px 164px;
+}
+.user-btn button:hover{
+    filter: brightness(130%);
+}
+@media (max-width: 1024px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn{
+        width: 150px !important;
+    }
+    .btn-start{
+        width: 150px !important;
+    }
+}
+/* CSS này là của Leaderboard */
