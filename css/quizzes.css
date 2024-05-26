@@ -197,13 +197,13 @@
         transition: width 5s;
     }
 }
-@media (max-width: 1650px) {
+@media (max-width: 1675px) {
     .col-3{
         padding-left: 10px !important;
         padding-right: 0px !important;
     }
     .col-9{
-        padding-left: 10px;
+        padding-left: 20px !important;
     }
     .btn-create{
         width: 150px !important;
@@ -216,6 +216,32 @@
     }
     .nav-card{
         gap: 40px 20px !important;
+    }
+    .search-bar {
+        width: 280px;
+        margin-left: 20%;
+        transition: width 5s;
+    }
+}
+@media (max-width: 1520px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .col-9{
+        padding-left: 30px !important;
+    }
+    .btn-create{
+        width: 150px !important;
+    }
+    .btn-start{
+        width: 200px !important;
+    }
+    .card{
+        width: 300px !important;
+    }
+    .nav-card{
+        gap: 40px 70px !important;
     }
     .search-bar {
         width: 280px;

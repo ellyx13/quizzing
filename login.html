@@ -11,7 +11,8 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="container">
+
     <div class="row row-cols-1">
       <div class="col align-self-start logo">
         <img src="../asset/image/logo.svg" alt="Logo" width="32px" />
@@ -20,9 +21,9 @@
 
       <div class="col align-self-center justify-content-center card">
         <h1 class="title">Welcome back!</h1>
-        <form class="d-grid gap-3">
-          <input type="email" class="form-control btnInput" placeholder="Email">
-          <input type="password" class="form-control btnInput" placeholder="Password">
+        <form class="d-grid gap-3" id="loginForm">
+          <input type="email" class="form-control btnInput" placeholder="Email" id="email">
+          <input type="password" class="form-control btnInput" placeholder="Password" id="password">
           <button type="submit" class="btnLogin">Login</button>
           <a href="#" class="linkForgotPassword">Forgot password?</a>
           <p class="split">OR</p>
@@ -32,7 +33,7 @@
       </div>
     </div>
   </div>
-
+  <script src="js/login.js"></script>
 </body>
 
 </html>
