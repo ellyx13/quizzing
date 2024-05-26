@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
+    height: 1080px !important;
 }
 
 * {
@@ -16,5 +17,7 @@ body {
     background-color: rgb(28, 34, 58, 0.8);
     border: #87909C;
     border-radius: 10px;
-    padding: 100px 30px;
+    width: 90% !important;
+    height: 90% !important;
+    padding: 30px;
 }

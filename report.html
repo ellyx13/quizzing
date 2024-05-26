@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="css/report.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous"/>
-    <title>Quizzes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">    
+    <title>Reports</title>
     <style>
         .name{
             margin: 1.5rem 0rem 1.5rem 0.5rem;
@@ -21,9 +22,6 @@
         .icon-plus{
             margin-bottom: 10px;
         }
-        .btn-text{
-            margin: 0px 0px 0px 10px;
-        }
         li{
             margin: 10px 0px 10px 0px;
         }
@@ -33,58 +31,69 @@
     <!-- all-->
     <div class="container-fluid">
         <!-- 2 cột -->
-        <div class="row">
+        <div class="h-1">
             <!-- left -->
             <div class="col-3">
-                <div class="row" style="color: azure">
-                    <div class="h-1">
-                        <img src="asset/image/image1.png" class="rounded-circle" alt="avata user" width="48px" height="48px"/>
-                        <p class=" fs-4 name">Kiet Pham</p>
-                    </div>
-                </div>
-                <div class="row-b">
-                    <div class="">
-                        <button class="btn btn-primary btn-create">
-                            <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
-                            <b class="fs-3 btn-text">Create</b>
+                <nav class="navbar bg-body-tertiary navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <img src="asset/image/bars-solid.svg" width="20px" alt="">
                         </button>
+                        <div class="offcanvas offcanvas-start " style="background-color: #20203C;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header text-light">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Quizzes</h5>
+                                <button type="button" class="btn-close" style="font-size: 20px; color: white;" sty data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                            </div>
+                            <div class="offcanvas-body flex-column">
+                                <div class="h-1" style="color: azure">
+                                    <img src="asset/image/image1.png" class="rounded-circle" alt="avata user" width="48px" height="48px"/>
+                                    <p class=" fs-4 name">Kiet Pham</p>
+                                </div>
+                                <div class="row-b">
+                                    <a class="disable" href="create_quiz.html" >
+                                        <button class="btn btn-primary btn-create btn-text fs-3">
+                                            <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
+                                            Create
+                                        </button>
+                                    </a>
+                                </div>
+                                <ul class="navbar-nav flex-column flex-grow-1 pe-3">
+                                    <li class="nav-item mt ">
+                                        <a class="nav-link disable  fs-5" aria-current="page" href="quizzes.html">
+                                            <img src="asset/image/home.png" alt="">
+                                            &emsp;Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mt">
+                                        <a class="nav-link disable fs-5" href="leaderboard.html">
+                                            <img src="asset/image/question.png" alt="">
+                                            &emsp;Leaderboard
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mt page-now">
+                                        <a class="nav-link disable text-light fs-5" href="report.html">
+                                            <img src="asset/image/dashboard.png" alt="">
+                                            &emsp;Reports
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row col-bar">
-                    <ul class="nav flex-column nav-pills">
-                        <li class="nav-item mt page-now">
-                            <a class="nav-link disable text-light fs-5" aria-current="page">
-                                <img src="asset/image/home.png">
-                                &emsp;Home
-                            </a>
-                        </li>
-                        <li class="nav-item mt">
-                            <a class="nav-link disable fs-5">
-                                <img src="asset/image/question.png" >
-                                &emsp;Leaderboard
-                            </a>
-                        </li>
-                        <li class="nav-item mt">
-                            <a class="nav-link disable fs-5" >
-                                <img src="asset/image/dashboard.png" >
-                                &emsp;Reports
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                </nav>
             </div>
             <!-- left -->
             <!-- right -->
-            <div class="col">
+            <div class="col-9">
                 <div class="col-l-p">
                     <p class="fs-1 text-light">Reports</p>
                 </div>
                  <!-- all table -->
-                <div 
-                style="width: 1310px; 
+                <div class="report-info"
+                style="width: 1320px; 
                 height: 850px; 
                 margin-left: 58px; 
-                border-radius: 20px;">
+                border-radius: 20px;overflow-y: scroll;overflow-x: hidden;">
                     <div>
                         <!-- title -->
                         <div 
@@ -99,7 +108,7 @@
                             margin-top: 3px;
                             margin-left: 76px; 
                             color: white;
-                            font-family: Barlow, Consolas, Courier New;
+                            font-family: Barlow;
                             font-weight: 600;
                             font-size: 25px;
                             line-height: 44px;">
@@ -111,7 +120,7 @@
                             margin-top: -44px;
                             margin-left: 390px; 
                             color: white;
-                            font-family: Barlow, Consolas, Courier New;
+                            font-family: Barlow;
                             font-weight: 600;
                             font-size: 25px;
                             line-height: 44px;">
@@ -123,7 +132,7 @@
                             margin-top: -44px;
                             margin-left: 680px; 
                             color: white;
-                            font-family: Barlow, Consolas, Courier New;
+                            font-family: Barlow;
                             font-weight: 600;
                             font-size: 25px;
                             line-height: 44px;">
@@ -135,7 +144,7 @@
                             margin-top: -44px;
                             margin-left: 1165px; 
                             color: white;
-                            font-family: Barlow, Consolas, Courier New;
+                            font-family: Barlow;
                             font-weight: 600;
                             font-size: 25px;
                             line-height: 44px;">
@@ -158,7 +167,7 @@
                         padding-top: 18px;
                         margin-left: 76px; 
                         color: white;
-                        font-family: Barlow, Consolas, Courier New;
+                        font-family: Barlow;
                         font-weight: 600;
                         font-size: 25px;
                         line-height: 44px;">
@@ -170,7 +179,7 @@
                         margin-top: -25px;
                         margin-left: 436px; 
                         color: white;
-                        font-family: Barlow, Consolas, Courier New;
+                        font-family: Barlow;
                         font-weight: 600;
                         font-size: 25px;
                         line-height: 44px;">
@@ -182,7 +191,7 @@
                         margin-top: -44px;
                         margin-left: 790px; 
                         color: white;
-                        font-family: Barlow, Consolas, Courier New;
+                        font-family: Barlow;
                         font-weight: 600;
                         font-size: 25px;
                         line-height: 44px;">
@@ -194,7 +203,7 @@
                         margin-top: -44px;
                         margin-left: 1200px; 
                         color: white;
-                        font-family: Barlow, Consolas, Courier New;
+                        font-family: Barlow;
                         font-weight: 600;
                         font-size: 25px;
                         line-height: 44px;">
@@ -217,7 +226,7 @@
                      padding-top: 18px;
                      margin-left: 76px; 
                      color: white;
-                     font-family: Barlow, Consolas, Courier New;
+                     font-family: Barlow;
                      font-weight: 600;
                      font-size: 25px;
                      line-height: 44px;">
@@ -229,7 +238,7 @@
                      margin-top: -25px;
                      margin-left: 436px; 
                      color: white;
-                     font-family: Barlow, Consolas, Courier New;
+                     font-family: Barlow;
                      font-weight: 600;
                      font-size: 25px;
                      line-height: 44px;">
@@ -241,7 +250,7 @@
                      margin-top: -44px;
                      margin-left: 790px; 
                      color: white;
-                     font-family: Barlow, Consolas, Courier New;
+                     font-family: Barlow;
                      font-weight: 600;
                      font-size: 25px;
                      line-height: 44px;">
@@ -253,7 +262,7 @@
                      margin-top: -44px;
                      margin-left: 1200px; 
                      color: white;
-                     font-family: Barlow, Consolas, Courier New;
+                     font-family: Barlow;
                      font-weight: 600;
                      font-size: 25px;
                      line-height: 44px;">
@@ -276,7 +285,7 @@
                    padding-top: 18px;
                    margin-left: 76px; 
                    color: white;
-                   font-family: Barlow, Consolas, Courier New;
+                   font-family: Barlow;
                    font-weight: 600;
                    font-size: 25px;
                    line-height: 44px;">
@@ -288,7 +297,7 @@
                    margin-top: -25px;
                    margin-left: 436px; 
                    color: white;
-                   font-family: Barlow, Consolas, Courier New;
+                   font-family: Barlow;
                    font-weight: 600;
                    font-size: 25px;
                    line-height: 44px;">
@@ -300,7 +309,7 @@
                    margin-top: -44px;
                    margin-left: 790px; 
                    color: white;
-                   font-family: Barlow, Consolas, Courier New;
+                   font-family: Barlow;
                    font-weight: 600;
                    font-size: 25px;
                    line-height: 44px;">
@@ -312,7 +321,7 @@
                    margin-top: -44px;
                    margin-left: 1200px; 
                    color: white;
-                   font-family: Barlow, Consolas, Courier New;
+                   font-family: Barlow;
                    font-weight: 600;
                    font-size: 25px;
                    line-height: 44px;">
@@ -335,7 +344,7 @@
                   padding-top: 18px;
                   margin-left: 76px; 
                   color: white;
-                  font-family: Barlow, Consolas, Courier New;
+                  font-family: Barlow;
                   font-weight: 600;
                   font-size: 25px;
                   line-height: 44px;">
@@ -347,7 +356,7 @@
                   margin-top: -25px;
                   margin-left: 436px; 
                   color: white;
-                  font-family: Barlow, Consolas, Courier New;
+                  font-family: Barlow;
                   font-weight: 600;
                   font-size: 25px;
                   line-height: 44px;">
@@ -359,7 +368,7 @@
                   margin-top: -44px;
                   margin-left: 790px; 
                   color: white;
-                  font-family: Barlow, Consolas, Courier New;
+                  font-family: Barlow;
                   font-weight: 600;
                   font-size: 25px;
                   line-height: 44px;">
@@ -371,7 +380,7 @@
                   margin-top: -44px;
                   margin-left: 1200px; 
                   color: white;
-                  font-family: Barlow, Consolas, Courier New;
+                  font-family: Barlow;
                   font-weight: 600;
                   font-size: 25px;
                   line-height: 44px;">
@@ -394,7 +403,7 @@
                  padding-top: 18px;
                  margin-left: 76px; 
                  color: white;
-                 font-family: Barlow, Consolas, Courier New;
+                 font-family: Barlow;
                  font-weight: 600;
                  font-size: 25px;
                  line-height: 44px;">
@@ -406,7 +415,7 @@
                  margin-top: -25px;
                  margin-left: 436px; 
                  color: white;
-                 font-family: Barlow, Consolas, Courier New;
+                 font-family: Barlow;
                  font-weight: 600;
                  font-size: 25px;
                  line-height: 44px;">
@@ -418,7 +427,7 @@
                  margin-top: -44px;
                  margin-left: 790px; 
                  color: white;
-                 font-family: Barlow, Consolas, Courier New;
+                 font-family: Barlow;
                  font-weight: 600;
                  font-size: 25px;
                  line-height: 44px;">
@@ -430,7 +439,7 @@
                  margin-top: -44px;
                  margin-left: 1200px; 
                  color: white;
-                 font-family: Barlow, Consolas, Courier New;
+                 font-family: Barlow;
                  font-weight: 600;
                  font-size: 25px;
                  line-height: 44px;">
@@ -453,7 +462,7 @@
                 padding-top: 18px;
                 margin-left: 76px; 
                 color: white;
-                font-family: Barlow, Consolas, Courier New;
+                font-family: Barlow;
                 font-weight: 600;
                 font-size: 25px;
                 line-height: 44px;">
@@ -465,7 +474,7 @@
                 margin-top: -25px;
                 margin-left: 436px; 
                 color: white;
-                font-family: Barlow, Consolas, Courier New;
+                font-family: Barlow;
                 font-weight: 600;
                 font-size: 25px;
                 line-height: 44px;">
@@ -477,7 +486,7 @@
                 margin-top: -44px;
                 margin-left: 790px; 
                 color: white;
-                font-family: Barlow, Consolas, Courier New;
+                font-family: Barlow;
                 font-weight: 600;
                 font-size: 25px;
                 line-height: 44px;">
@@ -489,7 +498,7 @@
                 margin-top: -44px;
                 margin-left: 1200px; 
                 color: white;
-                font-family: Barlow, Consolas, Courier New;
+                font-family: Barlow;
                 font-weight: 600;
                 font-size: 25px;
                 line-height: 44px;">
@@ -512,7 +521,7 @@
                padding-top: 18px;
                margin-left: 76px; 
                color: white;
-               font-family: Barlow, Consolas, Courier New;
+               font-family: Barlow;
                font-weight: 600;
                font-size: 25px;
                line-height: 44px;">
@@ -524,7 +533,7 @@
                margin-top: -25px;
                margin-left: 436px; 
                color: white;
-               font-family: Barlow, Consolas, Courier New;
+               font-family: Barlow;
                font-weight: 600;
                font-size: 25px;
                line-height: 44px;">
@@ -536,7 +545,7 @@
                margin-top: -44px;
                margin-left: 790px; 
                color: white;
-               font-family: Barlow, Consolas, Courier New;
+               font-family: Barlow;
                font-weight: 600;
                font-size: 25px;
                line-height: 44px;">
@@ -548,7 +557,7 @@
                margin-top: -44px;
                margin-left: 1200px; 
                color: white;
-               font-family: Barlow, Consolas, Courier New;
+               font-family: Barlow;
                font-weight: 600;
                font-size: 25px;
                line-height: 44px;">
@@ -571,7 +580,7 @@
               padding-top: 18px;
               margin-left: 76px; 
               color: white;
-              font-family: Barlow, Consolas, Courier New;
+              font-family: Barlow;
               font-weight: 600;
               font-size: 25px;
               line-height: 44px;">
@@ -583,7 +592,7 @@
               margin-top: -25px;
               margin-left: 436px; 
               color: white;
-              font-family: Barlow, Consolas, Courier New;
+              font-family: Barlow;
               font-weight: 600;
               font-size: 25px;
               line-height: 44px;">
@@ -595,7 +604,7 @@
               margin-top: -44px;
               margin-left: 790px; 
               color: white;
-              font-family: Barlow, Consolas, Courier New;
+              font-family: Barlow;
               font-weight: 600;
               font-size: 25px;
               line-height: 44px;">
@@ -607,7 +616,7 @@
               margin-top: -44px;
               margin-left: 1200px; 
               color: white;
-              font-family: Barlow, Consolas, Courier New;
+              font-family: Barlow;
               font-weight: 600;
               font-size: 25px;
               line-height: 44px;">
@@ -630,7 +639,7 @@
              padding-top: 18px;
              margin-left: 76px; 
              color: white;
-             font-family: Barlow, Consolas, Courier New;
+             font-family: Barlow;
              font-weight: 600;
              font-size: 25px;
              line-height: 44px;">
@@ -642,7 +651,7 @@
              margin-top: -25px;
              margin-left: 436px; 
              color: white;
-             font-family: Barlow, Consolas, Courier New;
+             font-family: Barlow;
              font-weight: 600;
              font-size: 25px;
              line-height: 44px;">
@@ -654,7 +663,7 @@
              margin-top: -44px;
              margin-left: 790px; 
              color: white;
-             font-family: Barlow, Consolas, Courier New;
+             font-family: Barlow;
              font-weight: 600;
              font-size: 25px;
              line-height: 44px;">
@@ -666,7 +675,7 @@
              margin-top: -44px;
              margin-left: 1200px; 
              color: white;
-             font-family: Barlow, Consolas, Courier New;
+             font-family: Barlow;
              font-weight: 600;
              font-size: 25px;
              line-height: 44px;">
@@ -690,7 +699,7 @@
             padding-top: 18px;
             margin-left: 76px; 
             color: white;
-            font-family: Barlow, Consolas, Courier New;
+            font-family: Barlow;
             font-weight: 600;
             font-size: 25px;
             line-height: 44px;">
@@ -702,7 +711,7 @@
             margin-top: -25px;
             margin-left: 436px; 
             color: white;
-            font-family: Barlow, Consolas, Courier New;
+            font-family: Barlow;
             font-weight: 600;
             font-size: 25px;
             line-height: 44px;">
@@ -714,7 +723,7 @@
             margin-top: -44px;
             margin-left: 790px; 
             color: white;
-            font-family: Barlow, Consolas, Courier New;
+            font-family: Barlow;
             font-weight: 600;
             font-size: 25px;
             line-height: 44px;">
@@ -726,7 +735,596 @@
             margin-top: -44px;
             margin-left: 1200px; 
             color: white;
-            font-family: Barlow, Consolas, Courier New;
+            font-family: Barlow;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 44px;">
+                80%
+            </div>
+            <!-- text in line 10-->
+            </div>
+         <!-- end line 10-->
+                        <div 
+                        style="width: 1310px;
+                        height:80px; 
+                        background:#20203c;
+                        border: solid 0px 0px 1px 0px #87909c;">
+                        <!-- text in line 1 -->
+                        <div 
+                        style="width: auto px; 
+                        height: 44px;
+                        padding-top: 18px;
+                        margin-left: 76px; 
+                        color: white;
+                        font-family: Barlow;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 44px;">
+                            HTML Cơ bản
+                        </div>
+                        <div 
+                        style="width: auto px; 
+                        height: 44px;
+                        margin-top: -25px;
+                        margin-left: 436px; 
+                        color: white;
+                        font-family: Barlow;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 44px;">
+                            20
+                        </div>
+                        <div 
+                        style="width: auto; 
+                        height: 44px;
+                        margin-top: -44px;
+                        margin-left: 790px; 
+                        color: white;
+                        font-family: Barlow;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 44px;">
+                            100
+                        </div>
+                        <div 
+                        style="width: auto; 
+                        height: 44px;
+                        margin-top: -44px;
+                        margin-left: 1200px; 
+                        color: white;
+                        font-family: Barlow;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 44px;">
+                            80%
+                        </div>
+                        <!-- text in line 1 -->
+                        <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                        </div>
+                     <!-- end line 1 -->
+                     <!-- line 2 -->
+                     <div 
+                     style="width: 1310px;
+                     height:80px; 
+                     background:#20203c;
+                     border: solid 0px 0px 1px 0px #87909c;">
+                     <!-- text in line 2 -->
+                     <div 
+                     style="width: auto; 
+                     height: 44px;
+                     padding-top: 18px;
+                     margin-left: 76px; 
+                     color: white;
+                     font-family: Barlow;
+                     font-weight: 600;
+                     font-size: 25px;
+                     line-height: 44px;">
+                         HTML Cơ bản
+                     </div>
+                     <div 
+                     style="width: auto; 
+                     height: 44px;
+                     margin-top: -25px;
+                     margin-left: 436px; 
+                     color: white;
+                     font-family: Barlow;
+                     font-weight: 600;
+                     font-size: 25px;
+                     line-height: 44px;">
+                         20
+                     </div>
+                     <div 
+                     style="width: auto; 
+                     height: 44px;
+                     margin-top: -44px;
+                     margin-left: 790px; 
+                     color: white;
+                     font-family: Barlow;
+                     font-weight: 600;
+                     font-size: 25px;
+                     line-height: 44px;">
+                         100
+                     </div>
+                     <div 
+                     style="width: auto; 
+                     height: 44px;
+                     margin-top: -44px;
+                     margin-left: 1200px; 
+                     color: white;
+                     font-family: Barlow;
+                     font-weight: 600;
+                     font-size: 25px;
+                     line-height: 44px;">
+                         80%
+                     </div>
+                     <!-- text in line 2 -->
+                     <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                     </div>
+                  <!-- end line 2 -->
+                   <!-- line 3 -->
+                   <div 
+                   style="width: 1310px;
+                   height:80px; 
+                   background:#20203c;
+                   border: solid 0px 0px 1px 0px #87909c;">
+                   <!-- text in line 3 -->
+                   <div 
+                   style="width: auto; 
+                   height: 44px;
+                   padding-top: 18px;
+                   margin-left: 76px; 
+                   color: white;
+                   font-family: Barlow;
+                   font-weight: 600;
+                   font-size: 25px;
+                   line-height: 44px;">
+                       HTML Cơ bản
+                   </div>
+                   <div 
+                   style="width: auto; 
+                   height: 44px;
+                   margin-top: -25px;
+                   margin-left: 436px; 
+                   color: white;
+                   font-family: Barlow;
+                   font-weight: 600;
+                   font-size: 25px;
+                   line-height: 44px;">
+                       20
+                   </div>
+                   <div 
+                   style="width: auto; 
+                   height: 44px;
+                   margin-top: -44px;
+                   margin-left: 790px; 
+                   color: white;
+                   font-family: Barlow;
+                   font-weight: 600;
+                   font-size: 25px;
+                   line-height: 44px;">
+                       100
+                   </div>
+                   <div 
+                   style="width: auto; 
+                   height: 44px;
+                   margin-top: -44px;
+                   margin-left: 1200px; 
+                   color: white;
+                   font-family: Barlow;
+                   font-weight: 600;
+                   font-size: 25px;
+                   line-height: 44px;">
+                       80%
+                   </div>
+                   <!-- text in line 3 -->
+                   <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                   </div>
+                <!-- end line 3 -->
+                  <!--line 4-->
+                  <div 
+                  style="width: 1310px;
+                  height:80px; 
+                  background:#20203c;
+                  border: solid 0px 0px 1px 0px #87909c;">
+                  <!-- text in line 4-->
+                  <div 
+                  style="width: auto; 
+                  height: 44px;
+                  padding-top: 18px;
+                  margin-left: 76px; 
+                  color: white;
+                  font-family: Barlow;
+                  font-weight: 600;
+                  font-size: 25px;
+                  line-height: 44px;">
+                      HTML Cơ bản
+                  </div>
+                  <div 
+                  style="width: auto; 
+                  height: 44px;
+                  margin-top: -25px;
+                  margin-left: 436px; 
+                  color: white;
+                  font-family: Barlow;
+                  font-weight: 600;
+                  font-size: 25px;
+                  line-height: 44px;">
+                      20
+                  </div>
+                  <div 
+                  style="width: auto; 
+                  height: 44px;
+                  margin-top: -44px;
+                  margin-left: 790px; 
+                  color: white;
+                  font-family: Barlow;
+                  font-weight: 600;
+                  font-size: 25px;
+                  line-height: 44px;">
+                      100
+                  </div>
+                  <div 
+                  style="width: auto; 
+                  height: 44px;
+                  margin-top: -44px;
+                  margin-left: 1200px; 
+                  color: white;
+                  font-family: Barlow;
+                  font-weight: 600;
+                  font-size: 25px;
+                  line-height: 44px;">
+                      80%
+                  </div>
+                  <!-- end text in line 4 -->
+                  <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                  </div>
+               <!-- end line 4 -->
+                 <!-- line 5 -->
+                 <div 
+                 style="width: 1310px;
+                 height:80px; 
+                 background:#20203c;
+                 border: solid 0px 0px 1px 0px #87909c;">
+                 <!-- text in line 5 -->
+                 <div 
+                 style="width: auto; 
+                 height: 44px;
+                 padding-top: 18px;
+                 margin-left: 76px; 
+                 color: white;
+                 font-family: Barlow;
+                 font-weight: 600;
+                 font-size: 25px;
+                 line-height: 44px;">
+                     HTML Cơ bản
+                 </div>
+                 <div 
+                 style="width: auto; 
+                 height: 44px;
+                 margin-top: -25px;
+                 margin-left: 436px; 
+                 color: white;
+                 font-family: Barlow;
+                 font-weight: 600;
+                 font-size: 25px;
+                 line-height: 44px;">
+                     20
+                 </div>
+                 <div 
+                 style="width: auto; 
+                 height: 44px;
+                 margin-top: -44px;
+                 margin-left: 790px; 
+                 color: white;
+                 font-family: Barlow;
+                 font-weight: 600;
+                 font-size: 25px;
+                 line-height: 44px;">
+                     100
+                 </div>
+                 <div 
+                 style="width: auto; 
+                 height: 44px;
+                 margin-top: -44px;
+                 margin-left: 1200px; 
+                 color: white;
+                 font-family: Barlow;
+                 font-weight: 600;
+                 font-size: 25px;
+                 line-height: 44px;">
+                     80%
+                 </div>
+                 <!-- text in line 5 -->
+                 <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                 </div>
+              <!-- end line 5-->
+                <!-- line 6-->
+                <div 
+                style="width: 1310px;
+                height:80px; 
+                background:#20203c;
+                border: solid 0px 0px 1px 0px #87909c;">
+                <!-- text in line 6-->
+                <div 
+                style="width: auto; 
+                height: 44px;
+                padding-top: 18px;
+                margin-left: 76px; 
+                color: white;
+                font-family: Barlow;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 44px;">
+                    HTML Cơ bản
+                </div>
+                <div 
+                style="width: auto; 
+                height: 44px;
+                margin-top: -25px;
+                margin-left: 436px; 
+                color: white;
+                font-family: Barlow;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 44px;">
+                    20
+                </div>
+                <div 
+                style="width: auto; 
+                height: 44px;
+                margin-top: -44px;
+                margin-left: 790px; 
+                color: white;
+                font-family: Barlow;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 44px;">
+                    100
+                </div>
+                <div 
+                style="width: auto; 
+                height: 44px;
+                margin-top: -44px;
+                margin-left: 1200px; 
+                color: white;
+                font-family: Barlow;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 44px;">
+                    80%
+                </div>
+                <!-- text in line 6-->
+                <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+                </div>
+             <!-- end line 6-->
+               <!-- line 7-->
+               <div 
+               style="width: 1310px;
+               height:80px; 
+               background:#20203c;
+               border: solid 0px 0px 1px 0px #87909c;">
+               <!-- text in line 7-->
+               <div 
+               style="width: auto; 
+               height: 44px;
+               padding-top: 18px;
+               margin-left: 76px; 
+               color: white;
+               font-family: Barlow;
+               font-weight: 600;
+               font-size: 25px;
+               line-height: 44px;">
+                   HTML Cơ bản
+               </div>
+               <div 
+               style="width: auto; 
+               height: 44px;
+               margin-top: -25px;
+               margin-left: 436px; 
+               color: white;
+               font-family: Barlow;
+               font-weight: 600;
+               font-size: 25px;
+               line-height: 44px;">
+                   20
+               </div>
+               <div 
+               style="width: auto; 
+               height: 44px;
+               margin-top: -44px;
+               margin-left: 790px; 
+               color: white;
+               font-family: Barlow;
+               font-weight: 600;
+               font-size: 25px;
+               line-height: 44px;">
+                   100
+               </div>
+               <div 
+               style="width: auto; 
+               height: 44px;
+               margin-top: -44px;
+               margin-left: 1200px; 
+               color: white;
+               font-family: Barlow;
+               font-weight: 600;
+               font-size: 25px;
+               line-height: 44px;">
+                   80%
+               </div>
+               <!-- text in line 7-->
+               <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+               </div>
+            <!-- end line 7-->
+              <!-- line 8-->
+              <div 
+              style="width: 1310px;
+              height:80px; 
+              background:#20203c;
+              border: solid 0px 0px 1px 0px #87909c;">
+              <!-- text in line 8-->
+              <div 
+              style="width: auto; 
+              height: 44px;
+              padding-top: 18px;
+              margin-left: 76px; 
+              color: white;
+              font-family: Barlow;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 44px;">
+                  HTML Cơ bản
+              </div>
+              <div 
+              style="width: auto; 
+              height: 44px;
+              margin-top: -25px;
+              margin-left: 436px; 
+              color: white;
+              font-family: Barlow;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 44px;">
+                  20
+              </div>
+              <div 
+              style="width: auto; 
+              height: 44px;
+              margin-top: -44px;
+              margin-left: 790px; 
+              color: white;
+              font-family: Barlow;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 44px;">
+                  100
+              </div>
+              <div 
+              style="width: auto; 
+              height: 44px;
+              margin-top: -44px;
+              margin-left: 1200px; 
+              color: white;
+              font-family: Barlow;
+              font-weight: 600;
+              font-size: 25px;
+              line-height: 44px;">
+                  80%
+              </div>
+              <!-- text in line 8-->
+              <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+              </div>
+           <!-- end line 8-->
+             <!-- line 9-->
+             <div 
+             style="width: 1310px;
+             height:80px; 
+             background:#20203c;
+             border: solid 0px 0px 1px 0px #87909c;">
+             <!-- text in line 9-->
+             <div 
+             style="width: auto; 
+             height: 44px;
+             padding-top: 18px;
+             margin-left: 76px; 
+             color: white;
+             font-family: Barlow;
+             font-weight: 600;
+             font-size: 25px;
+             line-height: 44px;">
+                 HTML Cơ bản
+             </div>
+             <div 
+             style="width: auto; 
+             height: 44px;
+             margin-top: -25px;
+             margin-left: 436px; 
+             color: white;
+             font-family: Barlow;
+             font-weight: 600;
+             font-size: 25px;
+             line-height: 44px;">
+                 20
+             </div>
+             <div 
+             style="width: auto; 
+             height: 44px;
+             margin-top: -44px;
+             margin-left: 790px; 
+             color: white;
+             font-family: Barlow;
+             font-weight: 600;
+             font-size: 25px;
+             line-height: 44px;">
+                 100
+             </div>
+             <div 
+             style="width: auto; 
+             height: 44px;
+             margin-top: -44px;
+             margin-left: 1200px; 
+             color: white;
+             font-family: Barlow;
+             font-weight: 600;
+             font-size: 25px;
+             line-height: 44px;">
+                 80%
+             </div>
+             <!-- text in line 9 -->
+             <hr style="height: 2px; color: #87909c; margin-top: 5px;">
+             </div>
+          <!-- end line 9 -->
+            <!-- line 10-->
+            <div 
+            style="width: 1310px;
+            height:73px; 
+            border-radius: 0px 0px 20px 20px;
+            background:#20203c;
+            border: solid 0px 0px 1px 0px #87909c;">
+            <!-- text in line 10-->
+            <div 
+            style="width: auto; 
+            height: 44px;
+            padding-top: 18px;
+            margin-left: 76px; 
+            color: white;
+            font-family: Barlow;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 44px;">
+                HTML Cơ bản
+            </div>
+            <div 
+            style="width: auto; 
+            height: 44px;
+            margin-top: -25px;
+            margin-left: 436px; 
+            color: white;
+            font-family: Barlow;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 44px;">
+                20
+            </div>
+            <div 
+            style="width: auto; 
+            height: 44px;
+            margin-top: -44px;
+            margin-left: 790px; 
+            color: white;
+            font-family: Barlow;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 44px;">
+                100
+            </div>
+            <div 
+            style="width: auto; 
+            height: 44px;
+            margin-top: -44px;
+            margin-left: 1200px; 
+            color: white;
+            font-family: Barlow;
             font-weight: 600;
             font-size: 25px;
             line-height: 44px;">

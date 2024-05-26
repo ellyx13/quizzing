@@ -7,50 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Leaderboard</title>
-    <style>
-        .name-respondent{
-            width: 300px;
-        }
-        /* CSS cho popup */
-        .popup {
-            position: fixed;
-            width: 25%;
-            height: 30%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -165%);
-            background-color: white;
-            padding: 20px;
-            border: 4px solid #87909C;
-            border-radius: 40px;
-            display: none; /* Ẩn ban đầu */
-            text-align: center;
-            font-family: barlow;
-        }
-        .text-popup{
-            color: #7556FF;
-            font-size: 50px;
-            font-weight: 600;
-            margin-bottom: auto;
-        }   
-        #userName{
-            font-size: 40px;
-        }
-        .popup.show {
-            display: block; /* Hiển thị khi cần thiết */
-        }
-        #closeButton{
-            width: 100px;
-            height: 50px;
-            border: 1px rgb(163, 163, 163) solid;
-            border-radius: 10px;
-            margin-top: 5%;
-            background-color: rgb(163, 163, 163);
-        }
-        #closeButton:hover{
-            filter: brightness(90%);
-        }
-    </style>
 </head>
 <body>
     <div class="container-fluid">
@@ -72,10 +28,12 @@
                                     <p class=" fs-4 name">Kiet Pham</p>
                                 </div>
                                 <div class="row-b">
-                                    <button class="btn btn-primary btn-create">
-                                        <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
-                                        <b class="fs-3 btn-text">Create</b>
-                                    </button>
+                                    <a class="disable" href="create_quiz.html" >
+                                        <button class="btn btn-primary btn-create btn-text fs-3">
+                                            <img src="asset/image/circle-plus.png" class="icon-plus" alt="" width="28px" height="28px">
+                                            Create
+                                        </button>
+                                    </a>
                                 </div>
                                 <ul class="navbar-nav flex-column flex-grow-1 pe-3">
                                     <li class="nav-item li-menu">
@@ -91,8 +49,8 @@
                                         </a>
                                     </li>
                                     <li class="nav-item li-menu">
-                                        <a class="nav-link disable fs-5" href="">
-                                            <img src="asset/image/dashboard.png" alt="">
+                                        <a class="nav-link disable fs-5" href="report.html">
+                                            <img src="asset/image/dashboard.png" alt="" >
                                             &emsp;Reports
                                         </a>
                                     </li>
@@ -109,7 +67,7 @@
                 <div class="leaderboard-info">
                     <ul class="list-group list-group-flush" style="width: 96%;">
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <img src="asset/image/gold-medal.png" alt="Gold medal">
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -133,7 +91,7 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/silver-medal.png" alt="">
+                            <img src="asset/image/silver-medal.png" alt="Silver medal">
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Huynh Tri Nhan</span>
@@ -157,7 +115,7 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/bronze-medal.png" alt="">
+                            <img src="asset/image/bronze-medal.png" alt="Bronze medal">
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Mai Thanh Long</span>
@@ -181,7 +139,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Benjamin Thomas Washington</span>
@@ -205,7 +165,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -229,7 +191,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -253,7 +217,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -277,7 +243,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -301,7 +269,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -325,7 +295,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -349,7 +321,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -373,7 +347,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -397,7 +373,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -421,7 +399,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -445,7 +425,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -469,7 +451,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -493,7 +477,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                 <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -517,7 +503,9 @@
                             </div>
                         </li>
                         <li class="list-group-item h-1">
-                            <img src="asset/image/gold-medal.png" alt="">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/image1.png" alt="">
                                  <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
@@ -545,27 +533,45 @@
             </div>
         </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+    </svg>
     <div class="popup" id="followPopup">
-        <p class="text-popup">Followed 
-            <p id="userName"></p>
-        </p>
-        <button id="closeButton">Close</button>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2 " role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+            <div>
+                <canvas class="text-popup" id="myCanvas" width="200" height="60"></canvas>
+            </div>
+            <div id="userName">
+              An example success alert with an icon
+            </div>
+            <div>
+                <button id="closeButton">X</button>
+            </div>
+            
+        </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
     <script>
         function toggleFollow(button) {
-            // Toggle class "followed" để thay đổi màu sắc và nội dung của nút
             button.classList.toggle('followed');
             if (button.classList.contains('followed')) {
-                // Nếu được theo dõi, thực hiện các thay đổi sau:
-                button.textContent = 'Followed'; // Thay đổi nội dung của nút thành "Followed"
-                button.style.backgroundColor = 'green'; // Đổi màu nền thành màu xanh lá
-                button.style.borderColor = 'green'; // Đổi màu viền thành màu xanh lá
+                button.textContent = 'Followed';
+                button.style.backgroundColor = 'green';
+                button.style.borderColor = 'green';
             } else {
-                // Nếu không được theo dõi, thực hiện các thay đổi sau:
-                button.textContent = 'Follow'; // Thay đổi nội dung của nút thành "Follow"
-                button.style.backgroundColor = ''; // Trả lại màu nền mặc định
-                button.style.borderColor = ''; // Trả lại màu viền mặc định
+                button.textContent = 'Follow';
+                button.style.backgroundColor = '';
+                button.style.borderColor = '';
             }
              
 
@@ -574,15 +580,35 @@
 
             if (button.classList.contains('followed')) {
                 var userName = button.closest('.list-group-item').querySelector('.name-respondent').textContent;
-                document.getElementById('userName').textContent = userName; // Hiển thị tên người dùng trong popup
-                popup.classList.add('show'); // Hiển thị popup
+                document.getElementById('userName').textContent = userName;
+                popup.classList.add('show');
                 
-                // Sự kiện khi người dùng nhấp vào nút Close
                 closeButton.addEventListener('click', function() {
-                    popup.classList.remove('show'); // Ẩn popup khi người dùng nhấp vào nút Close
+                    popup.classList.remove('show');
                 });
+                setTimeout(function() {
+                    popup.classList.remove('show');
+                }, 3000);
             }
         }
+        document.addEventListener("DOMContentLoaded", function() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "40px barlow";
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+            gradient.addColorStop("0", "#67c39a");
+            gradient.addColorStop("0.5", "#77eab6");
+            gradient.addColorStop("1.0", "#57d79d");
+            ctx.fillStyle = gradient;
+            ctx.borderColor= "#7556FF"
+            ctx.fillText("Followed!", 5, 45);
+        });
+        var numberRanks = document.querySelectorAll('.number-rank');
+        var startNumber = 4;
+        numberRanks.forEach(function(numberRank) {
+            numberRank.textContent = startNumber;
+            startNumber++;
+        });
     </script>
 </body>
 </html>

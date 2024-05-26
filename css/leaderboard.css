@@ -97,6 +97,10 @@
 }
 .btn-text{
     margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-family: barlow !important;
+    font-weight: 700 !important;
 }
 .li-menu{
     margin: 10px 0px 10px 0px;
@@ -222,4 +226,63 @@
         width: 150px !important;
     }
 }
+.name-respondent{
+    width: 300px;
+}
+.div-number-rank{
+    align-items: center;
+    width: 50px; 
+    height: 50px;
+    font-size: 40px;
+}
+.number-rank{
+    font-family: barlow;
+    font-weight: 700;
+    margin: 5px 15px 10px 10px;
+}
 /* CSS này là của Leaderboard */
+
+/* CSS cho popup */
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 55%;
+    transform: translate(-50%, -70%);
+    border-radius: 40px;
+    display: none;
+    text-align: center;
+    font-family: barlow;
+    width: 900px;
+}
+.text-popup{
+    color: #7556FF;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+#userName{
+    color: black;
+    font-size: 30px;
+    margin-right: 240px;
+}
+.popup.show {
+    display: block;
+}
+#closeButton{
+    border: none;
+    background-color: #d1e7dd;
+    font-size: 30px;
+}
+#closeButton:hover{
+    filter: brightness(110%);
+}
+.alert{
+    --bs-alert-padding-y: 5px !important;
+    --bs-alert-padding-x: 20px !important;
+    --bs-border-radius: 10px;
+}
+.alert svg{
+    width: 40px; 
+    height:40px; 
+    margin-right: 100px !important;
+}
+/* CSS cho popup */
