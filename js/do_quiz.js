@@ -53,6 +53,9 @@ const questions = [
 
 
 
+function loadAnswer() {
+
+}
 function updateQuestion(index) {
     const questionElement = document.getElementById('question');
     const answer1 = document.getElementById('answer1');
@@ -88,13 +91,17 @@ function updateProcessBar(index) {
 
 
 
+function congratulation() {
+    const totalQuestions = questions.length;
+    window.location.href = `congratulation.html?score=${score}&totalQuestion=${totalQuestions}`;
+}
 
 function nextQuestion() {
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         updateQuestion(currentQuestionIndex);
     } else {
-        alert('Complete quiz');
+        congratulation()
     }
 }
 
@@ -113,6 +120,7 @@ function checkAnswer(answerIndex, btnAnswerId) {
     if (answerIndex === currentQuestion.correctAnswer) {
         const rightAnswer = document.getElementById(btnAnswerId);
         rightAnswer.style.backgroundColor = '#19C874';
+        score++;
     } else {
         const wrongAnswer = document.getElementById(btnAnswerId);
         wrongAnswer.style.backgroundColor = '#CF4343';
@@ -123,6 +131,7 @@ function checkAnswer(answerIndex, btnAnswerId) {
 
 let currentQuestionIndex = 0;
 var isAnswer = false;
+var score = 0;
 updateQuestion(currentQuestionIndex);
 
 document.getElementById('btnNext').onclick = nextQuestion;
