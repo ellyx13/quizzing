@@ -16,7 +16,7 @@ body {
 .container-fluid {
     background-color: rgb(28, 34, 58, 0.8);
     border: #87909C;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 100% !important;
     height: 100%;
     padding: 50px 50px !important;
@@ -68,9 +68,9 @@ body {
 }
 
 .btnControl {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 100%;
-    max-height: 80px;
+    max-height: 100px;
 }
 
 .btnPrevious,
@@ -83,15 +83,33 @@ body {
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
+    body {
+        padding: 100px
+    }
+
+    .container-fluid {
+        max-width: 1600px !important;
+        margin: 0 auto;
+    }
+
     .answerQuestion {
         max-height: 60px !important;
     }
 }
 
 @media (max-width: 1200px) {
+    body {
+        padding: 50px 50px;
+    }
+
     .container-fluid {
-        max-width: 1000px !important;
+        max-width: 1600px !important;
+        margin: 0 auto;
+    }
+
+    .answerQuestion {
+        max-height: 60px !important;
     }
 }
 
