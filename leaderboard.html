@@ -45,7 +45,7 @@
                                 </div>
                                 <ul class="navbar-nav flex-column flex-grow-1 pe-3">
                                     <li class="nav-item li-menu">
-                                        <a class="nav-link disable  fs-5" aria-current="page" href="quizzes.html">
+                                        <a class="nav-link disable  fs-5" aria-current="page" href="home.html">
                                             <img src="asset/image/home.png" alt="">
                                             &emsp;Home
                                         </a>
@@ -62,12 +62,39 @@
                                             &emsp;Reports
                                         </a>
                                     </li>
-                                    <li class="nav-item mt page-now">
+                                    <li class="nav-item mt">
                                         <a class="nav-link disable fs-5" aria-current="page" href="edit_user.html">
                                             <img src="asset/image/profile.png" alt="">
                                             &emsp;My profile
                                         </a>
                                     </li>
+                                    <!-- Dropdown -->
+                                    <li>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span style="color: white;">Menu</span>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">My infomation</a></li>
+                                                    <li><a class="dropdown-item" href="#">Edit infomation</a></li>
+                                                    <li><a class="dropdown-item" href="leaderboard.html">My Rank</a></li>
+                                                    <li class="dropdown-submenu">
+                                                        <a class="dropdown-item dropdown-toggle" href="quizzes.html">Quiz</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">History</a></li>
+                                                            <li><a class="dropdown-item" href="#">Like</a></li>
+                                                            <li><a class="dropdown-item" href="#">Follow</a></li>
+                                                            <li><a class="dropdown-item" href="leaderboard.html">Followed</a></li>
+                                                            <li><a class="dropdown-item" href="report.html">Quiz Rank</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Dropdown -->
                                 </ul>
                             </div>
                         </div>
@@ -188,7 +215,88 @@
                             </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
+                                <span class="fs-3 name-respondent">Nguyen Van A</span>
+                            </div>
+                            <div class="h-1">
+                                <div class="user-quiz">
+                                    <img src="asset/image/question.png" alt="">
+                                    <span class="fs-3">30</span>
+                                </div>
+                                <div class="user-scores">
+                                    <img src="asset/image/tich.png" alt="">
+                                    <span class="fs-3">90</span>
+                                </div>
+                                <div class="user-percent">
+                                    <img src="asset/image/percent.png" alt="">
+                                    <span class="fs-3">80</span>
+                                </div>
+                                <div class="user-btn">
+                                    <button type="button" class="fs-3 button-flw"
+                                        onclick="toggleFollow(this)">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item h-1">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
+                            <div class="user-info h-1">
+                                <img src="asset/image/avatar.png" alt="">
+                                <span class="fs-3 name-respondent">Nguyen Van B</span>
+                            </div>
+                            <div class="h-1">
+                                <div class="user-quiz">
+                                    <img src="asset/image/question.png" alt="">
+                                    <span class="fs-3">30</span>
+                                </div>
+                                <div class="user-scores">
+                                    <img src="asset/image/tich.png" alt="">
+                                    <span class="fs-3">90</span>
+                                </div>
+                                <div class="user-percent">
+                                    <img src="asset/image/percent.png" alt="">
+                                    <span class="fs-3">80</span>
+                                </div>
+                                <div class="user-btn">
+                                    <button type="button" class="fs-3 button-flw"
+                                        onclick="toggleFollow(this)">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item h-1">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
+                            <div class="user-info h-1">
+                                <img src="asset/image/avatar.png" alt="">
+                                <span class="fs-3 name-respondent">Nguyen Van C</span>
+                            </div>
+                            <div class="h-1">
+                                <div class="user-quiz">
+                                    <img src="asset/image/question.png" alt="">
+                                    <span class="fs-3">30</span>
+                                </div>
+                                <div class="user-scores">
+                                    <img src="asset/image/tich.png" alt="">
+                                    <span class="fs-3">90</span>
+                                </div>
+                                <div class="user-percent">
+                                    <img src="asset/image/percent.png" alt="">
+                                    <span class="fs-3">80</span>
+                                </div>
+                                <div class="user-btn">
+                                    <button type="button" class="fs-3 button-flw"
+                                        onclick="toggleFollow(this)">Follow</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item h-1">
+                            <div class="h-1 div-number-rank">
+                                <p class="number-rank"></p>
+                            </div>
+                            <div class="user-info h-1">
+                                <img src="asset/image/avatar.png" alt="">
+                                <span class="fs-3 name-respondent">Nguyen Van D</span>
                             </div>
                             <div class="h-1">
                                 <div class="user-quiz">
@@ -404,7 +512,7 @@
                             </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
+                                <span class="fs-3 name-respondent">Luu Bi</span>
                             </div>
                             <div class="h-1">
                                 <div class="user-quiz">
@@ -431,88 +539,7 @@
                             </div>
                             <div class="user-info h-1">
                                 <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
-                            </div>
-                            <div class="h-1">
-                                <div class="user-quiz">
-                                    <img src="asset/image/question.png" alt="">
-                                    <span class="fs-3">30</span>
-                                </div>
-                                <div class="user-scores">
-                                    <img src="asset/image/tich.png" alt="">
-                                    <span class="fs-3">90</span>
-                                </div>
-                                <div class="user-percent">
-                                    <img src="asset/image/percent.png" alt="">
-                                    <span class="fs-3">80</span>
-                                </div>
-                                <div class="user-btn">
-                                    <button type="button" class="fs-3 button-flw"
-                                        onclick="toggleFollow(this)">Follow</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item h-1">
-                            <div class="h-1 div-number-rank">
-                                <p class="number-rank"></p>
-                            </div>
-                            <div class="user-info h-1">
-                                <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
-                            </div>
-                            <div class="h-1">
-                                <div class="user-quiz">
-                                    <img src="asset/image/question.png" alt="">
-                                    <span class="fs-3">30</span>
-                                </div>
-                                <div class="user-scores">
-                                    <img src="asset/image/tich.png" alt="">
-                                    <span class="fs-3">90</span>
-                                </div>
-                                <div class="user-percent">
-                                    <img src="asset/image/percent.png" alt="">
-                                    <span class="fs-3">80</span>
-                                </div>
-                                <div class="user-btn">
-                                    <button type="button" class="fs-3 button-flw"
-                                        onclick="toggleFollow(this)">Follow</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item h-1">
-                            <div class="h-1 div-number-rank">
-                                <p class="number-rank"></p>
-                            </div>
-                            <div class="user-info h-1">
-                                <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
-                            </div>
-                            <div class="h-1">
-                                <div class="user-quiz">
-                                    <img src="asset/image/question.png" alt="">
-                                    <span class="fs-3">30</span>
-                                </div>
-                                <div class="user-scores">
-                                    <img src="asset/image/tich.png" alt="">
-                                    <span class="fs-3">90</span>
-                                </div>
-                                <div class="user-percent">
-                                    <img src="asset/image/percent.png" alt="">
-                                    <span class="fs-3">80</span>
-                                </div>
-                                <div class="user-btn">
-                                    <button type="button" class="fs-3 button-flw"
-                                        onclick="toggleFollow(this)">Follow</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item h-1">
-                            <div class="h-1 div-number-rank">
-                                <p class="number-rank"></p>
-                            </div>
-                            <div class="user-info h-1">
-                                <img src="asset/image/avatar.png" alt="">
-                                <span class="fs-3 name-respondent">Pham Le Tuan Kiet</span>
+                                <span class="fs-3 name-respondent">Tao Thao</span>
                             </div>
                             <div class="h-1">
                                 <div class="user-quiz">
@@ -597,9 +624,8 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <script>
         function toggleFollow(button) {
             button.classList.toggle('followed');
