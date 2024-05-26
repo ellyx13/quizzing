@@ -12,7 +12,49 @@
 
 <body>
     <div class="container-fluid">
+        <div class="progress">
+            <div class="progress-bar processBar" role="progressbar" aria-valuemax="100" id="processBar"></div>
+        </div>
+        <div class="processQuestion" id="progressText">
+            Quiz question of 1 of 10
+        </div>
+        <h1 class="nameQuestion" id="question"></h1>
+        <button type="button"
+            class="btn btn-outline-secondary w-100 cardAnswer d-flex justify-content-start align-items-center"
+            id="btnAnswer1">
+            <span class="numberQuestion">A
+            </span>
+            <span class="answer" id="answer1"></span>
+        </button>
+        <button type="button"
+            class="btn btn-outline-secondary w-100 cardAnswer d-flex justify-content-start align-items-center"
+            id="btnAnswer2">
+            <span class="numberQuestion">B
+            </span>
+            <span class="answer" id="answer2"></span>
+        </button>
+        <button type="button"
+            class="btn btn-outline-secondary w-100 cardAnswer d-flex justify-content-start align-items-center"
+            id="btnAnswer3">
+            <span class="numberQuestion">C
+            </span>
+            <span class="answer" id="answer3"></span>
+        </button>
+        <button type="button"
+            class="btn btn-outline-secondary w-100 cardAnswer d-flex justify-content-start align-items-center"
+            id="btnAnswer4">
+            <span class="numberQuestion">D
+            </span>
+            <span class="answer" id="answer4"></span>
+        </button>
+        <div class="btnControl d-flex justify-content-between">
+            <button type="button" class="btn btn-outline-secondary btnPrevious" id="btnPrevious"> Pervious question
+            </button>
+            <button type="button" class="btn btn-outline-secondary btnNext" id="btnNext"> Next question
+            </button>
+        </div>
     </div>
+    <script src="../js/do_quiz.js"></script>
 </body>
 
 </html>
