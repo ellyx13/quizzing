@@ -5,11 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/quizzes.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Quizzes</title>
+    <title>Home</title>
     <style>
         .name {
             margin: 1.5rem 0rem 1.5rem 0.5rem;
@@ -102,6 +101,32 @@
                                             &emsp;Reports
                                         </a>
                                     </li>
+                                    <!-- Dropdown -->
+                                    <li>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span style="color: white;">Menu</span>
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">My infomation</a></li>
+                                                    <li><a class="dropdown-item" href="#">Edit infomation</a></li>
+                                                    <li><a class="dropdown-item" href="leaderboard.html">My Rank</a></li>
+                                                    <li class="dropdown-submenu">
+                                                        <a class="dropdown-item dropdown-toggle" href="quizzes.html">Quiz</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">History</a></li>
+                                                            <li><a class="dropdown-item" href="#">Like</a></li>
+                                                            <li><a class="dropdown-item" href="#">Follow</a></li>
+                                                            <li><a class="dropdown-item" href="leaderboard.html">Followed</a></li>
+                                                            <li><a class="dropdown-item" href="report.html">Quiz Rank</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- Dropdown -->
                                 </ul>
                             </div>
                         </div>
@@ -142,10 +167,10 @@
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
+                                <h5 class="card-title">Lập trình hướng đối tượng</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Thanh Long
                                 </div>
                                 <div class="nav-btn">
                                     <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
@@ -170,13 +195,69 @@
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kinh tế chính trị</h5>
+                                <h5 class="card-title">huit lập trình căn bản</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Thanh Long
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Anh văn 3</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Tri Nhan
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">mạng Máy tính</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
                                     &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
                                 </div>
                                 <div class="nav-btn">
                                     <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
+                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">thực hành ứng dụng công nghệ thông tin</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cấu trúc rời rạc huit 2023</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Tri Nhan
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
                                     <img src="asset/image/heart.png" class="btn-heart" alt="">
                                 </div>
                             </div>
@@ -187,7 +268,7 @@
                                 <h5 class="card-title">HTML căn bản</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Tri Nhan
                                 </div>
                                 <div class="nav-btn">
                                     <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
@@ -198,7 +279,21 @@
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kinh tế chính trị</h5>
+                                <h5 class="card-title">bootstrap căn bản</h5>
+                                <div class="h-1  card-info">
+                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
+                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Thanh Long
+                                </div>
+                                <div class="nav-btn">
+                                    <a href="#" class="btn btn-primary btn-start">Start now</a>
+                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Javascript căn bản</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
                                     &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
@@ -212,77 +307,7 @@
                         <div class="card">
                             <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
-                                <div class="h-1  card-info">
-                                    <i class="fa-solid fa-list"></i>&nbsp;10 quiz
-                                    &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
-                                </div>
-                                <div class="nav-btn">
-                                    <a href="do_quiz.html" class="btn btn-primary btn-start">Start now</a>
-                                    <img src="asset/image/heart.png" class="btn-heart" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="asset/image/thumbnail.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML căn bản</h5>
+                                <h5 class="card-title">CSS căn bản</h5>
                                 <div class="h-1  card-info">
                                     <i class="fa-solid fa-list"></i>&nbsp;10 quiz
                                     &emsp;<img src="asset/image/user.png" width="10px" height="10px" alt="">Kiet Pham
@@ -303,9 +328,8 @@
         <!-- 2 Cột -->
     </div>
     <!-- Toàn bộ -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const searchInput = document.getElementById('search-input');
