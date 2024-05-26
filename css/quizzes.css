@@ -145,9 +145,6 @@
     .nav-card{
         gap: 40px 50px !important;
     }
-    .text-light{
-        margin-top: 10px;
-    }
     .search-bar {
         width: 280px;
         margin-left: 20%;
@@ -202,7 +199,16 @@
         width: 80% !important;
     }
     .btn-start{
-        width: 200px !important;
+        width: 170px !important;
+    }
+}
+@media (max-width: 400px) {
+    .col-3{
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+    .btn-start{
+        width: 150px !important;
     }
 }
 @media (max-width: 375px) {
@@ -211,16 +217,21 @@
         padding-right: 0px !important;
     }
     .btn-start{
-        width: 160px !important;
+        display: flex;
+        width: 120px !important;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
     .col-3{
         padding-left: 10px !important;
         padding-right: 0px !important;
     }
+    .nav-btn{
+        display: flex;
+    }
     .btn-start{
-        width: 120px !important;
+        width: 100px !important;
+        margin-right: 5px !important;
     }
 }
 .card{

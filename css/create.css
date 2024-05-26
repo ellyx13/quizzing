@@ -28,6 +28,13 @@
     --bs-navbar-toggler-transition: 0;
     background-color: white !important;
 }
+.btn-text{
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-family: barlow;
+    font-weight: 700;
+}
 @media (max-width: 576px) {
     .col-3 {
         padding-left: 20px !important;
@@ -97,6 +104,10 @@
 }
 .btn-text{
     margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-family: barlow !important;
+    font-weight: 700 !important;
 }
 .li-menu{
     margin: 10px 0px 10px 0px;
