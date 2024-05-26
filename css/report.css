@@ -125,3 +125,18 @@
 .report-info::-webkit-scrollbar-thumb:hover {
    background: #555; 
 }
+/* CSS để làm dropdown submenu */
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+    display: none;
+}
+.dropdown-menu .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
