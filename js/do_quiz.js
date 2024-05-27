@@ -97,7 +97,6 @@ function updateQuestion(index) {
         if (currentQuestion.answer === currentQuestion.correctAnswer) {
             const rightAnswer = document.getElementById(btnAnswerId);
             rightAnswer.style.backgroundColor = '#19C874';
-            score++;
         } else {
             const wrongAnswer = document.getElementById(btnAnswerId);
             wrongAnswer.style.backgroundColor = '#CF4343';
