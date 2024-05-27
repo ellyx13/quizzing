@@ -75,7 +75,34 @@ function updateQuestion(index) {
     document.getElementById('btnAnswer4').style.backgroundColor = 'transparent';
 
     isAnswer = false;
-    updateProcessBar(index)
+    updateProcessBar(index);
+    let currentQuestion = questions[currentQuestionIndex];
+    if ('answer' in currentQuestion) {
+        let btnAnswerId = '';
+        switch (currentQuestion.answer) {
+            case 0:
+                btnAnswerId = 'btnAnswer1';
+                break;
+            case 1:
+                btnAnswerId = 'btnAnswer2';
+                break;
+            case 2:
+                btnAnswerId = 'btnAnswer3';
+                break;
+            case 3:
+                btnAnswerId = 'btnAnswer4';
+                break;
+        }
+        isAnswer = true;
+        if (currentQuestion.answer === currentQuestion.correctAnswer) {
+            const rightAnswer = document.getElementById(btnAnswerId);
+            rightAnswer.style.backgroundColor = '#19C874';
+            score++;
+        } else {
+            const wrongAnswer = document.getElementById(btnAnswerId);
+            wrongAnswer.style.backgroundColor = '#CF4343';
+        }
+    }
 }
 
 function updateProcessBar(index) {
@@ -125,6 +152,7 @@ function checkAnswer(answerIndex, btnAnswerId) {
         const wrongAnswer = document.getElementById(btnAnswerId);
         wrongAnswer.style.backgroundColor = '#CF4343';
     }
+    questions[currentQuestionIndex].answer = answerIndex;
     isAnswer = true;
 }
 
