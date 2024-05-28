@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/login.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .loginGoogle:hover{
+        filter:brightness(150%)
+      }
+    </style>
 </head>
 
 <body>
@@ -25,9 +30,9 @@
           <input type="email" class="form-control btnInput" placeholder="Email" id="email">
           <input type="password" class="form-control btnInput" placeholder="Password" id="password">
           <button type="submit" class="btnLogin">Login</button>
-          <a href="#" class="linkForgotPassword">Forgot password?</a>
+          <a href="forgotpassword.html" class="linkForgotPassword">Forgot password?</a>
           <p class="split">OR</p>
-          <button class="loginGoogle">Login with Google <img src="../asset/image/google.png" alt=""
+          <button class="loginGoogle"><a class="disable" style="color:white;" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dgo-to-account-button&ifkv=AaSxoQybjAKz7uiZ8MXzAmTpzITJBvYx5Jr8AqKnXnxqqlKa0_jlgbekmSp-pFTUtm19Pub8fgc3Tg&service=accountsettings&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S184797698%3A1716900706429130&ddm=0">Login with Google</a> <img src="../asset/image/google.png" alt=""
               width="24px"></button>
         </form>
       </div>
